@@ -194,16 +194,24 @@ button:hover {
 
 .card-email {
 	font-size: 1rem;
-	color: #555;
+	color: #776d6d;
 }
 
+.card-email:hover{
+	color: #a00f80;
+}
+
+/* .card-email:click{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
 /* Footer */
-footer {
+/* footer {
 	background-color: #222;
 	color: white;
 	text-align: center;
 	padding: 20px 0;
-}
+} */
 
 @media (max-width: 768px) {
 	nav {
