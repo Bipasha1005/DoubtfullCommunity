@@ -8,7 +8,7 @@
 
 body {
 	font-family: Arial, sans-serif;
-    /* background: #20CD8D; */
+	/* background: #20CD8D; */
 	background: linear-gradient(360deg, rgb(144, 219, 196) 100%, rgb(26, 221, 162) 0%);
 }
 
@@ -72,7 +72,7 @@ nav {
 .about h1 {
 	font-size: 2.5rem;
 	margin-bottom: 20px;
-    /* text-align: left;
+	/* text-align: left;
     margin-left: 155px; */
 }
 
@@ -81,7 +81,7 @@ nav {
 	color: #323030;
 	max-width: 800px;
 	margin: 0 auto;
-    /* text-align: left;
+	/* text-align: left;
     margin-left: 70px; */
 }
 
@@ -112,7 +112,7 @@ nav {
 	text-align: justify;
 }
 
-button {
+/* button {
 	border: none;
 	outline: 0;
 	padding: 10px;
@@ -124,11 +124,11 @@ button {
 	cursor: pointer;
 	width: 15rem;
 	border-radius: 4px;
-}
+} */
 
-button:hover {
+/* button:hover {
 	background-color: #365f4f;
-}
+} */
 
 /* Team Section */
 
@@ -148,6 +148,9 @@ button:hover {
 	justify-content: center;
 	gap: 15px;
 	margin-top: 20px;
+
+	width: 100%;
+    		overflow: hidden;
 }
 
 .card {
@@ -159,6 +162,19 @@ button:hover {
 	width: 18rem;
 	height: 25rem;
 	margin-top: 10px;
+
+	width: calc(33.333% - 20px);
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+}
+.team-cards .card:last-child {
+	margin-right: 0;
 }
 
 .card:hover {
@@ -197,7 +213,7 @@ button:hover {
 	color: #776d6d;
 }
 
-.card-email:hover{
+.card-email:hover {
 	color: #a00f80;
 }
 
@@ -205,13 +221,41 @@ button:hover {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } */
 
-/* Footer */
-/* footer {
-	background-color: #222;
-	color: white;
-	text-align: center;
-	padding: 20px 0;
+/* carausel */
+
+/* .carousel {
+
+	display: flex;
+
+	overflow-x: scroll;
+
+	scroll-snap-type: x mandatory;
+
+	scroll-behavior: smooth;
+
 } */
+
+/* .carousel img {
+
+	width: 100%;
+
+	scroll-snap-align: start;
+
+} */
+@media (max-width: 768px) {
+	.team-cards .card {
+		width: calc(50% - 20px);
+	}
+}
+
+@media (max-width: 480px) {
+	.team-cards .card {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+
 
 @media (max-width: 768px) {
 	nav {
